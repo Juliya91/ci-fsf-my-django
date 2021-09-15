@@ -5,7 +5,7 @@ from .forms import ItemForm
 
 # Create your views here.
 def get_todo_list(request):
-    items = Item.objects.all()
+    items = Item.itemes.all()
     context = {
         'items': items
     }
