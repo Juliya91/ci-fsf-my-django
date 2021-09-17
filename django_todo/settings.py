@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!(-09t-wvb-4l16=i$-3nhri0ojj-_b6a!__0u23w4=!6s9#vd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['admin-django-todo-app.herokuapp.com']
 
 
 # Application definition
@@ -84,7 +84,8 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://gfomrxfbdymuts:4daf0b1bd55574effd782ab9cb2a0797bbaeb508bd79190cfbefa3379f908e8a@ec2-54-220-195-236.eu-west-1.compute.amazonaws.com:5432/d7i91g9cmi41s0')
+    'default': dj_database_url.parse(
+        'postgres://gfomrxfbdymuts:4daf0b1bd55574effd782ab9cb2a0797bbaeb508bd79190cfbefa3379f908e8a@ec2-54-220-195-236.eu-west-1.compute.amazonaws.com:5432/d7i91g9cmi41s0')
 }
 
 
@@ -93,16 +94,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
